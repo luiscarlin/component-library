@@ -7,17 +7,32 @@
   "author": "Luis Carlin <luiscarlin@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@types/jest": "^27.0.2",
     "@types/react": "^17.0.32",
+    "jest": "^27.3.1",
     "prettier": "^2.4.1",
     "react": "^17.0.2",
     "rollup": "^2.58.0",
     "rollup-plugin-typescript2": "^0.30.0",
+    "ts-jest": "^27.0.7",
     "typescript": "^4.4.4"
   },
   "peerDependencies": {
     "react": "^17.0.2"
   },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
   "scripts": {
-    "build": "npx rollup -c"
+    "build": "npx rollup -c",
+    "test": "jest"
   }
 }

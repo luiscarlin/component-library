@@ -15,3 +15,4 @@ console.log(test());
 
 
 export { Test } from "./atoms/Test";
+export { someFunction } from "./common/foo";
