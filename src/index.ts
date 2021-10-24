@@ -12,3 +12,6 @@ const test = (): string => {
 };
 
 console.log(test());
+
+
+export { Test } from "./atoms/Test";

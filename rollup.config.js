@@ -10,6 +10,11 @@ const plugins = [
   }),
 ];
 
+const external = [
+  ...Object.keys(pkg.dependencies || {}),
+  ...Object.keys(pkg.peerDependencies || {}),
+];
+
 export default [
   {
     input,
@@ -19,6 +24,7 @@ export default [
       sourcemap: true,
     },
     plugins,
+    external,
   },
   {
     input,
@@ -28,5 +34,6 @@ export default [
       sourcemap: true,
     },
     plugins,
+    external,
   },
 ];
