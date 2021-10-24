@@ -1,7 +1,7 @@
 import { someFunction } from "./foo";
 
 describe("someFunction()", () => {
-  test("return value", () => {
+  it("return value", () => {
     expect(someFunction()).toBe("test");
   });
 });
