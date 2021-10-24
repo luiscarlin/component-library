@@ -13,10 +13,8 @@ yarn
 # run tests
 yarn test
 
-
 # build library
 yarn build
-
 
 # build storybook
 yarn build-storybook
