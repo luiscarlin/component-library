@@ -1,6 +1,10 @@
 import React from "react";
 
-export const Test: React.FC = ({title}) => {
+interface TestProps {
+  title: string;
+}
+
+export const Test = ({title}: TestProps) => {
   return (
     <div>
       <h1>{title}</h1>

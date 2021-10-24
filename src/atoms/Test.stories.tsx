@@ -1,5 +1,5 @@
 import React from "react";
-import { Test } from "./Test";
+import {Test} from "./Test";
 
 import { Meta } from "@storybook/react/types-6-0";
 
