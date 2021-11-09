@@ -11,7 +11,7 @@ const BaseButton = styled.button`
   text-align: center;
   letter-spacing: 0.75px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: grey;
   background: #6202EE;
   border-radius: 4px;
 
